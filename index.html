@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Gestão</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, Verdana;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0f0f0f;
+            color: rgb(192, 4, 4);
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero-image {
+            background-image: url('https://www.servicesgestao.com.br/images/Condo.jpg');
+            background-size: cover;
+            background-position: center;
+            color: rgb(18, 8, 77);
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        .hero-image h2 {
+            font-size: 2.5em;
+        }
+
+        .hero-image p {
+            font-size: 1.2em;
+        }
+
+        .main-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        form button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #0a0a0a;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #111010;
+            text-align: center;
+            padding: 10px 0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Services Gestão - O Gestor do seu Condominial</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#fale-com-o-Gestor">Fale com o Gestor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero-image">
+                <h2>Bem-vindo!</h2>
+                <p>Seu parceiro ideal para a gestão do seu condominio.</p>
+                <img src="https://www.servicesgestao.com.br/images/Condo.jpg" alt="Condo Image" class="main-image">
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Services Gestão, especializado em serviço de Gestão condominial com vasta experiência no mercado condominial. Minha missão é garantir a gestão eficiente e harmoniosa dos condomínios, com foco na transparência e no bem-estar dos moradores.</p>
+            <h3>Serviços Oferecidos</h3>
+            <ul>
+                <li>Administração Financeira</li>
+                <li>Gestão de Conflitos</li>
+                <li>Manutenção Predial</li>
+                <li>Organização de Assembleias</li>
+                <li>Gestão por indicadores do sistema adotado</li>
+                <li>Plantão tira dúvidas todos os meses no condomínio, abordando sempre um tema específico do condomínio</li>
+            </ul>
+            <h3>Chaves de sucesso da gestão</h3>
+            <ul>
+                <li>Segurança</li>
+                <li>Transparência</li>
+                <li>Respeito</li>
+                <li>Valorização</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Informações de Contato</h2>
+            <p>Telefone: 31 987453210</p>
+            <p>Email: <a href="mailto:gestor@servicesgestao.com.br">gestor@servicesgestao.com.br</a></p>
+        </section>
+
+        <section id="fale-com-o-Gestor">
+            <h2>Fale com o Gestor</h2>
+            <form action="submit_form.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                
+                <button type="submit">Enviar</button>
+                <a href="https://wa.me/5531987453210" target="_blank" class="whatsapp-button">WhatsApp</a>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Services Gestão. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
