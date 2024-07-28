@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: Trebuchet MS rgb(15, 15, 15);
+            font-family: 'Trebuchet MS', sans-serif; /* Ajuste da fonte */
             margin: 0;
             padding: 0;
+            color: rgb(15, 15, 15);
         }
 
         header {
@@ -19,6 +20,7 @@
             text-align: center;
             position: relative;
         }
+
         .main-logo {
             width: 300px;
             height: 100px;
@@ -43,13 +45,13 @@
         }
 
         .hero-image {
-            background-image: url('CONDO.png'); /* Se a imagem está na mesma pasta, o caminho está correto */
+            background-image: url('CONDO.png'); /* Verifique o caminho da imagem */
             background-size: cover;
             background-position: center;
             color: rgb(12, 12, 12);
             text-align: center;
             padding: 200px 100px;
-            position: auto;
+            position: relative;
         }
 
         .hero-image h2 {
@@ -72,7 +74,7 @@
         .container {
             max-width: 1000px; /* Ajuste para o tamanho desejado */
             margin: 10px auto; /* Centraliza o contêiner */
-            padding: auto 10px; /* Adiciona um padding interno para espaçamento lateral */
+            padding: 0 10px; /* Corrigido o padding */
         }
 
         section {
@@ -146,7 +148,7 @@
         <div class="container"> <!-- Início do contêiner -->
             <section id="home">
                 <div class="hero-image">
-
+                    <!-- Verifique se deseja adicionar algum texto ou imagens aqui -->
                 </div>
             </section>
 
@@ -179,7 +181,7 @@
 
             <section id="fale-com-o-Gestor">
                 <h2>Fale com o Gestor</h2>
-                <form action="https://formspree.io/f/[seu-endpoint]" method="POST">
+                <form action="https://formspree.io/f/[seu-endpoint]" method="POST"> <!-- Substitua [seu-endpoint] pelo endpoint correto -->
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" required>
                     
