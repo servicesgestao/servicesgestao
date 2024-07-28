@@ -8,3 +8,7 @@
     padding: 100px 20px;
     position: relative;
 }
+.main-logo {
+    width: 150px;  /* Ajuste a largura desejada */
+    height: auto;  /* Mantém a proporção da imagem */
+}
