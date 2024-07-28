@@ -1,0 +1,10 @@
+.hero-image {
+    background-image: <img src="CONDO.png" alt="Logo" class="main-CONDO">
+
+    background-size: cover;
+    background-position: center;
+    color: rgb(44, 17, 199);
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
